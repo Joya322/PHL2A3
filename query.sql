@@ -177,11 +177,6 @@ VALUES (501, 1, 101, 'A-12', 'Confirmed', 150.00),
 -- Queries to value retrieve
 -- ================================================================================
 -- Query 1: Retrieve all upcoming football matches belonging to the 'Champions League' where the match status is 'Available'.
-SELECT *
-FROM Matches
-WHERE tournament_category = 'Champions League'
-    AND match_status = 'Available';
--- or
 SELECT match_id,
     fixture,
     base_ticket_price::INTEGER AS base_ticket_price
